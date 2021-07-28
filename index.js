@@ -69,7 +69,7 @@ internals.run = async function () {
 internals.upload = async function(file, s3Bucket, kmsArn) {
   const s3Key = Path.basename(file);
 
-  return await App.upload(file, s3Bucket, s3Key, kmsArn);
+  return App.upload(file, s3Bucket, s3Key, kmsArn);
 };
 
 internals.download = async function(file, s3Bucket, kmsArn) {
@@ -77,7 +77,7 @@ internals.download = async function(file, s3Bucket, kmsArn) {
 
   console.log(`File will be available here ${filePath}`);
 
-  return await App.download(filePath, s3Bucket, file, kmsArn);
+  return App.download(filePath, s3Bucket, file, kmsArn);
 }
 
 internals.run().catch(console.error).finally(process.exit);
