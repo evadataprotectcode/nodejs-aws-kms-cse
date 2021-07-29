@@ -11,8 +11,11 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
     "@hapi/bossy": "^5.1.0",
     "aws-sdk": "^2.913.0",
+    "commitlint-config-jira": "^1.5.1",
+    "commitlint-plugin-jira-rules": "^1.5.1",
     "progress": "^2.0.3"
   }
 }
